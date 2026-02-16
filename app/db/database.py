@@ -24,4 +24,5 @@ class Base(DeclarativeBase):
 
 
 def initial_db():
+    from app.models.product import Product,Image
     Base.metadata.create_all(engine)
